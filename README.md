@@ -1,1 +1,1 @@
-### webpack template with basic styles, google fonts, and separate dir for assets, components and styles
+repositorio que contiene página publicitaria en idioma español, para el diseño de hojas de cálculo personalizadas
