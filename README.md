@@ -1,1 +1,1 @@
-Publicidad sobre diseño de hojas de cálculo avanzadas en Google Sheet
+### webpack template with basic styles, google fonts, and separate dir for assets, components and styles
