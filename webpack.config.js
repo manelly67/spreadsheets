@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'How the script for repetitive accounting tasks works',
+      title: 'Maria Nelly Lopez diseño de hojas de cálculo de Google Drive',
     }),
   ],
   output: {
