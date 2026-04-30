@@ -2,7 +2,7 @@ function toggleButton (arg){
   const root = arg;
   const toggle = document.createElement("button");
   toggle.className = "toggle";
-  toggle.textContent = "\u{1F518}"; // 🐶 \u{1F436} other option 🔘 U+1F518
+  toggle.textContent = "\u{1F49A}"; // 🐶 \u{1F436} other option 🔘 U+1F518  1F49A
   toggle.setAttribute("title", "toggle theme");
   toggle.addEventListener("click", () => {
     toggleTheme();

@@ -1,4 +1,5 @@
 import { toggleButton } from "./toggleButton";
+import { content_ES } from "./content_ES";
 
 function homepage() {
   const root = document.documentElement;
@@ -14,14 +15,12 @@ function homepage() {
   const content = document.createElement("section");
 
 
-  const mainTitle = document.createElement("h1");
-  mainTitle.textContent = "INICIANDO REPOSITORIO";
-
+  content_ES(content);
   
   document.body.appendChild(main);
   main.appendChild(divButtons);
   main.appendChild(content);
-  content.appendChild(mainTitle);
+  
 
   divButtons.appendChild(toggle);
 }
