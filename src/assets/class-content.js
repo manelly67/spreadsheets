@@ -18,6 +18,8 @@ class Contenido {
     this.projectDescription5_array = [];
     this.projectDescription6 = '';
     this.projectDescription6_array = [];
+    this.projectDescription7 = '';
+    this.projectDescription7_array = [];
     
     this.language = '';
   }

@@ -27,7 +27,7 @@ project1.projectDescription3 =
   'Módulo de Costos';
 project1.projectDescription3_array = [
   'Tabla base con precios unitarios de materiales.',
-  'Tablas integradas formuladas que permiten dados parámetros calcular el costo de los materiales de cada producto y definir un precio sugerido de venta.',
+  'Tablas integradas formuladas que permiten, en función de parámetros dados, calcular el costo de los materiales de cada producto y definir un precio sugerido de venta.',
   'Generador del costo total de materia prima con base a los productos vendidos. (requiere tener el modulo de ventas)',
 ];
 project1.projectDescription4 =
@@ -48,6 +48,13 @@ project1.projectDescription6 =
 project1.projectDescription6_array = [
   'Dashboard desde','por cuatro gráficos.',
   'Scripts diseñados en Google Apps Script a solicitud, para tareas repetitivas o específicas, desde', 'dependiendo de la complejidad.',
+];
+
+project1.projectDescription7 =
+  'Apoyo Administrativo o de Mejoras';
+project1.projectDescription7_array = [
+  'Menos de 5 horas, a','c/u',
+  'Más de 5 horas en una semana a','c/u',
 ];
 
 

@@ -4,7 +4,7 @@ const modulo_ventas = 25;
 const modulo_gastos = 15;
 const modulo_costos = 35;
 const modulo_gestion_consolid = 20;
-const hora_menos_5_en_semana = 10;
+const hora_menos_5_en_semana = 6;
 const hora_mas_5_en_semana = 3.5;
 
 export {

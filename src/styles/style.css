@@ -3,8 +3,10 @@
   --color-base-text: #57690b;     
   --color-a-hover: #849E00;
   --color-text-button: #e9e7db;
-  --color-bg-button: #443f31;
+  --color-bg-button: transparent;
   --color-shadow: #443f31;
+  --color-tag: #cd5454;
+  --text-tag: #e9e7db;
 }
 
 .dark {
@@ -12,8 +14,10 @@
   --color-base-text: #e9e7db;
   --color-a-hover: #849E00;
   --color-text-button: #e9e7db;
-  --color-bg-button: #443f31;
+  --color-bg-button: #97968e;
   --color-shadow: #57690b;
+  --color-tag: #97968e;
+  --text-tag: #443f31;
 }
 
 body {
@@ -77,9 +81,22 @@ section {
   text-align: center;
 }
 
-@media screen and (max-width: 430px) {
+.divImgPhoto{
+  width: 150px;     
+  height: 150px;     
+  border-radius: 50%; 
+  overflow: hidden;  
+}
+
+.divImgPhoto > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 431px) {
   .setButtons {
-    position: absolute;
+    position: fixed;
     top: 2%;
     left: 3%;
     display: flex;
@@ -93,12 +110,16 @@ section {
     margin-top: 5rem;
   }
 
+  .divImgPhoto {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 431px) {
   .setButtons {
-    position: absolute;
-    top: 1rem;
+    position: fixed;
+    top: 1.5rem;
     right: 3rem;
 
     display: flex;
@@ -116,11 +137,12 @@ section {
 /* toggle button */
 .toggle {
   border: 0px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   font-size: 2rem;
-  background-color: transparent;
-  margin: 0 auto;
+  background-color: var(--color-bg-button);
+  align-items: center;
 }
 
 .animate1 {
@@ -298,4 +320,50 @@ span {
   font-style:italic;
   text-align: center;
   color: var(--color-a-hover);
+}
+
+.displayInRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.displayInRow > p {
+  flex-wrap: wrap;
+}
+
+.price-tag {
+  width: 120px;
+  height: 100px;
+  /* Creates a transparent punch hole */
+  background: radial-gradient(circle at 24px 24px, transparent 8px, var(--color-tag) 8px);
+  /* Cuts the top-left corner at a 45° angle */
+  clip-path: polygon(16px 0, 100% 0, 100% 100%, 0 100%, 0 16px);
+  /* Optional polish */
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  /* margin: 20px auto; */
+}   
+
+.prices {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--text-tag);
+  display: inline-block;
+  transform: rotate(-25deg);
+  margin-top: 10px;
+}
+
+.photoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.iconImg {
+  height: 30px;
+  width: auto;
+  object-fit: cover;
 }
