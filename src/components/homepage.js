@@ -2,6 +2,7 @@ import photo_MN from "../assets/photo-footer.png";
 import { toggleButton } from "./toggleButton";
 import { content_ES } from "./content_ES";
 import { insertImg } from "./insertImage";
+import { footerDiv } from "./footerDiv";
 
 function homepage() {
   const root = document.documentElement;
@@ -36,6 +37,9 @@ function homepage() {
     "145px",
     "145px",
   );
+
+  footerDiv(content);
+
 }
 
 export { homepage };

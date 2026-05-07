@@ -8,6 +8,7 @@ const content_ES = (arg) => {
     
 
   const firstParr = document.createElement("div");
+  firstParr.className = "firstParr";
   const txt1 = document.createElement("p");
   txt1.textContent = arrayProjects[0]['textContentAbout'];
     
